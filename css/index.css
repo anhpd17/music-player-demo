@@ -1,0 +1,74 @@
+.music-player {
+    width: 100%;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    background: #fff;
+    height: calc(100vh - 40px); /* Điều chỉnh chiều cao để tính cả padding */
+}
+.album-cover {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.progress {
+    height: 6px;
+    cursor: pointer;
+}
+.control-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #f8f9fa;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.play-btn {
+    width: 60px;
+    height: 60px;
+}
+body {
+    background: #f0f2f5;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+.playlist {
+    width: 100%;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    background: #fff;
+    height: calc(100vh - 40px); /* Điều chỉnh chiều cao để tính cả padding */
+    overflow-y: auto;
+}
+.song-item {
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: #f8f9fa;
+}
+.song-item:hover {
+    background: #ccc;
+}
+.song-item.active {
+    background: #ccc;
+}
+.player-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    min-height: calc(
+        100vh - 40px
+    ); /* Điều chỉnh chiều cao để tính cả padding */
+    padding: 0;
+}
+.container-fluid {
+    padding: 20px;
+}
+.audio-player {
+    width: 100%;
+}

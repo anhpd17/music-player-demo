@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Login/Signup</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        />
+        <link rel="stylesheet" href="./css/auth.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="form-container">
+                <!-- Login Form -->
+                <form id="login-form">
+                    <h2>Welcome Back</h2>
+                    <div class="form-group">
+                        <input
+                            type="email"
+                            id="login-email"
+                            placeholder="Email"
+                            required
+                        />
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="form-group">
+                        <input
+                            type="password"
+                            id="login-password"
+                            placeholder="Password"
+                            required
+                        />
+                        <i class="fas fa-lock"></i>
+                        <i class="fas fa-eye password-toggle"></i>
+                    </div>
+                    <div class="remember-forgot">
+                        <label class="remember-me">
+                            <input type="checkbox" />
+                            Remember me
+                        </label>
+                        <a href="#" class="forgot-password">Forgot Password?</a>
+                    </div>
+                    <button type="submit">Login</button>
+
+                    <div class="social-login">
+                        <p>Or continue with</p>
+                        <div class="social-buttons">
+                            <button type="button" class="social-button google">
+                                <i class="fab fa-google"></i>
+                                Google
+                            </button>
+                            <button
+                                type="button"
+                                class="social-button facebook"
+                            >
+                                <i class="fab fa-facebook-f"></i>
+                                Facebook
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="switch-form">
+                        Don't have an account?
+                        <a onclick="switchForm('signup')">Sign up</a>
+                    </div>
+                </form>
+
+                <!-- Signup Form -->
+                <form id="signup-form">
+                    <h2>Create Account</h2>
+                    <div class="form-group">
+                        <input
+                            type="text"
+                            id="signup-name"
+                            placeholder="Full Name"
+                            required
+                        />
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="form-group">
+                        <input
+                            type="email"
+                            id="signup-email"
+                            placeholder="Email"
+                            required
+                        />
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="form-group">
+                        <input
+                            type="password"
+                            id="signup-password"
+                            placeholder="Password"
+                            required
+                        />
+                        <i class="fas fa-lock"></i>
+                        <i class="fas fa-eye password-toggle"></i>
+                        <div class="password-strength">
+                            <div class="password-strength-bar"></div>
+                        </div>
+                        <div class="validation-message">
+                            Password must be at least 8 characters
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input
+                            type="password"
+                            id="signup-confirm"
+                            placeholder="Confirm Password"
+                            required
+                        />
+                        <i class="fas fa-lock"></i>
+                        <i class="fas fa-eye password-toggle"></i>
+                        <div class="validation-message">
+                            Passwords do not match
+                        </div>
+                    </div>
+                    <button type="submit" class="signup-btn">
+                        Create Account
+                    </button>
+
+                    <div class="social-login">
+                        <p>Or sign up with</p>
+                        <div class="social-buttons">
+                            <button type="button" class="social-button google">
+                                <i class="fab fa-google"></i>
+                                Google
+                            </button>
+                            <button
+                                type="button"
+                                class="social-button facebook"
+                            >
+                                <i class="fab fa-facebook-f"></i>
+                                Facebook
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="switch-form">
+                        Already have an account?
+                        <a onclick="switchForm('login')">Login</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script src="./js/auth.js"></script>
+        <script type="module" src="./js/signup.js"></script>
+    </body>
+</html>
